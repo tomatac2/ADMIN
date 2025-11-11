@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(135deg, #0d9488 0%, #14b8a6 25%, #22d3ee 50%, #67e8f9 75%, #a5f3fc 100%);
+  }
+  
+  .hero-gradient-overlay {
+    background: linear-gradient(45deg, rgba(13, 148, 136, 0.1) 0%, transparent 50%, rgba(34, 211, 238, 0.1) 100%);
+  }
+  
+  .phone-glow {
+    box-shadow: 0 0 40px rgba(20, 184, 166, 0.3);
+  }
+  
+  .phone-glow:hover {
+    box-shadow: 0 0 60px rgba(20, 184, 166, 0.5);
+  }
+}
+
+/* Driverly Design System - Modern ride-hailing platform
+All colors MUST be HSL for consistency and theming.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 25% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    /* Driverly Brand Colors */
+    --primary: 174 72% 56%; /* Driverly Teal */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 174 72% 48%;
+
+    --secondary: 210 17% 93%;
+    --secondary-foreground: 215 25% 27%;
+
+    --accent: 25 95% 58%; /* Orange accent for CTAs */
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 210 17% 93%;
+    --muted-foreground: 215 16% 57%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 13% 91%;
+    --input: 214 13% 91%;
+    --ring: 174 72% 56%;
+
+    --radius: 0.75rem;
+
+    /* Driverly Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(174 72% 56%), hsl(269 97% 85%));
+    --gradient-hero: linear-gradient(135deg, hsl(174 72% 56%) 0%, hsl(210 100% 90%) 100%);
+    /* Mesh-style gradient for the Download section */
+    --gradient-download: 
+      radial-gradient(900px 700px at 12% 18%, hsl(20 95% 70% / 0.85) 0%, transparent 60%),
+      radial-gradient(900px 700px at 78% 22%, hsl(195 95% 65% / 0.9) 0%, transparent 58%),
+      radial-gradient(800px 600px at 18% 82%, hsl(285 85% 62% / 0.8) 0%, transparent 60%),
+      radial-gradient(700px 600px at 90% 80%, hsl(320 90% 70% / 0.7) 0%, transparent 55%),
+      linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(210 100% 97%) 100%);
+    /* Footer gradient: synced with index.css */
+    --gradient-footer:
+      linear-gradient(180deg, hsl(0 0% 100% / 0.55), hsl(0 0% 100% / 0.55)),
+      radial-gradient(1200px 550px at 50% 38%,
+        hsl(0 0% 100% / 0.92) 0%,
+        hsl(0 0% 100% / 0.85) 32%,
+        transparent 62%
+      ),
+      linear-gradient(
+        90deg,
+        hsl(0 0% 100%) 0%,
+        hsl(0 0% 100%) 12%,
+        #44B0FF 42%,
+        #8B44FF 50%,
+        #EBBF70 78%,
+        hsl(0 0% 100%) 88%,
+        hsl(0 0% 100%) 100%
+      );
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(174 72% 56% / 0.15);
+    --shadow-card: 0 8px 30px -8px hsl(215 25% 27% / 0.12);
+    
+    /* Typography */
+    --font-display: 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/30 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/50;
+  }
+}

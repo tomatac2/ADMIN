@@ -1,0 +1,29 @@
+(function(e){e(document).ready(function(){e.ajaxSetup({headers:{"X-CSRF-TOKEN":e('meta[name="csrf-token"]').attr("content")}}),e.fn.select2&&(e(".select-2").select2(),e(".select2-multiple").select2({tags:!1,tokenSeparators:[","," "]}),e("#select-country-code").select2({templateResult:function(t){if(!t.id)return t.text;var n=e('<span><img src="'+e(t.element).data("image")+'" class="flag-img" /> +'+t.text.trim()+"</span>");return n},templateSelection:function(t){return t.text==" "?t.text:" + "+t.text}})),e(".btn.spinner-btn").click(function(t){t.preventDefault();const n=e(this).closest("form"),a=e(this),s=a.attr("name");console.log(s),n.find('input[name="_clicked_button"]').remove(),n.append(`<input type="hidden" name="${s}" value="1">`),e(".invalid-feedback").removeClass("d-block"),n.valid()&&(a.prop("disabled",!0),a.append('<span class="spinner"></span>'),n.submit())}),e(window).on("pageshow",function(){e(".add-spinner").prop("disabled",!1),e(".add-spinner .spinner").remove()}),e(".add-spinner").click(function(t){t.preventDefault();const n=e(this);n.prop("disabled",!0),n.find(".spinner").remove(),n.append('<span class="spinner"></i></span>');const a=n.data("url");window.location.href=a}),e(".mobile-toggle").click(function(){e(".nav-menus").toggleClass("open")}),e(".mobile-search").click(function(){e(".form-control-plaintext").toggleClass("open")}),e(".form-control-plaintext").on("keyup",function(t){t.target.value.trim()?e("body").addClass("offcanvas"):e("body").removeClass("offcanvas")}),e.fn.tinymce&&tinymce.init({selector:".content",setup:function(t){t.on("init change",function(){t.save()})},plugins:["lists link anchor","visualblocks code fullscreen","table paste"],toolbar:["undo redo |bold italic underline strikethrough | formatselect | forecolor backcolor code table"],menubar:!1,branding:!1,placeholder:"Enter Content..."}),e.fn.tinymce&&tinymce.init({selector:".image-embed-content",setup:function(t){t.on("init change",function(){t.save()})},plugins:["advlist autolink lists link image charmap print preview anchor","searchreplace visualblocks code fullscreen","insertdatetime media table paste"],toolbar:["insertfile undo redo | styleselect | bold italic underline strikethrough | formatselect | forecolor backcolor code table | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image "],image_title:!0,file_picker_types:"image",relative_urls:!1,remove_script_host:!1,images_upload_handler:function(t,n,a){var s=new FormData;s.append("file",t.blob(),t.filename());var o=e('meta[name="csrf-token"]').attr("content");e.ajax({url:"/admin/media/upload",type:"POST",data:s,headers:{"X-CSRF-TOKEN":o},contentType:!1,processData:!1,success:function(i){i.location?n(i.location):a("Invalid JSON response")},error:function(i,r,l){a("Image upload failed: "+r+" - "+l)}})},menubar:!1,branding:!1,placeholder:"Enter Content..."}),e(".toggle-password").on("click",function(){var t=e(this).closest(".position-relative").find("input"),n=e(this).closest(".toggle-password").find("span");t.attr("type")==="password"?(t.attr("type","text"),e(this).removeClass("ri-eye-line").addClass("ri-eye-off-line"),n&&n.length>0&&n.html(" Hide")):(t.attr("type","password"),e(this).removeClass("ri-eye-off-line").addClass("ri-eye-line"),n&&n.length>0&&n.html(" Show"))}),e(".bg-img").parent().addClass("bg-size"),e(".bg-img").each(function(){var t=e(this),n=t.attr("src"),a=t.parent();a.css({"background-image":"url("+n+")","background-size":"cover","background-position":"center",display:"block"}),t.hide()}),e('input[name="categories[]"]').on("click",function(){let t=e(this).attr("data-id"),n=e(this).attr("data-parent"),a=e(this).prop("checked");function s(i,r){e(`input[data-id="${i}"]`).prop("checked",r);let l=e(`input[data-id="${i}"]`).attr("data-parent");l!=="0"&&s(l,r)}function o(i,r){e(`input[data-parent="${i}"]`).prop("checked",r),e(`input[data-parent="${i}"]`).each(function(){let l=e(this).attr("data-id");o(l,r)})}a?(s(n,!0),e(`input[data-parent="${n}"]`).not(`[data-id="${t}"]`).prop("checked",!1)):o(t,!1)})}),e(document).ready(function(){const t=a=>{if(!a.id)return a.text;const s=a.element.getAttribute("image"),o=a.element.getAttribute("sub-title"),i=a.text.trim(),r=i.charAt(0).toUpperCase();let l=`
+            <div class="selected-item d-flex align-items-center">
+        `;s?l+=`
+                <img src="${s}" class="rounded-circle mr-2" style="width: 40px; height: 40px; object-fit: cover;" alt="${i}"/>
+            `:l+=`
+                <div class="initial-letter rounded-circle flex-center mr-2" style="width: 40px; height: 40px; background-color: #ccc; color: #fff;">
+                    ${r}
+                </div>
+            `,l+=`
+                <div class="detail">
+                    <h6 class="">${i}</h6>
+                    <p class=" small">${o||""}</p>
+                </div>
+            </div>
+        `;const c=document.createElement("span");return c.innerHTML=l,c};e(".user-dropdown").select2({placeholder:"Select an option",templateSelection:t,templateResult:t});const n=a=>{if(!a.id)return a.text;const s=a.element.getAttribute("image"),o=a.element.getAttribute("sub-title"),i=a.text.trim(),r=i.charAt(0).toUpperCase();let l=`
+            <div class="selected-item d-flex align-items-center">
+        `;s?l+=`
+                <img src="${s}" style="width: 40px; height: 40px;" alt="${i}"/>
+            `:l+=`
+                <div class="initial-letter rounded-circle flex-center mr-2">
+                    ${r}
+                </div>
+            `,l+=`
+                <div class="detail">
+                    <h6 class="">${i}</h6>
+                    <p class=" small">${o||""}</p>
+                </div>
+            </div>
+        `;const c=document.createElement("span");return c.innerHTML=l,c};e(".sqaure-image-dropdown").select2({placeholder:"Select an option",templateSelection:n,templateResult:n})})})(jQuery);

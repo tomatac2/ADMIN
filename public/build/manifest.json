@@ -1,0 +1,263 @@
+{
+  "_CustomerSupport-Cc2v7qeh.js": {
+    "file": "assets/CustomerSupport-Cc2v7qeh.js",
+    "name": "CustomerSupport",
+    "imports": [
+      "resources/js/app.tsx",
+      "_Footer-BC-jr3SD.js"
+    ],
+    "assets": [
+      "assets/Mobile Screen 1-DI7bmN_k.png",
+      "assets/Mobile Screen 2-Cfm8xfnx.png",
+      "assets/Shape-oRgD60fF.png",
+      "assets/app-store-Dq1uJ17p.png",
+      "assets/google-play-BSbUD0S0.png",
+      "assets/business-meeting-CcPpf83q.jpg"
+    ]
+  },
+  "_FAQ-YVWECqSO.js": {
+    "file": "assets/FAQ-YVWECqSO.js",
+    "name": "FAQ",
+    "imports": [
+      "resources/js/app.tsx"
+    ]
+  },
+  "_Footer-BC-jr3SD.js": {
+    "file": "assets/Footer-BC-jr3SD.js",
+    "name": "Footer",
+    "imports": [
+      "resources/js/app.tsx"
+    ]
+  },
+  "_Statistics-Lq_HTHvc.js": {
+    "file": "assets/Statistics-Lq_HTHvc.js",
+    "name": "Statistics",
+    "imports": [
+      "resources/js/app.tsx"
+    ]
+  },
+  "public/front/images/dropdown-dark.svg": {
+    "file": "assets/dropdown-dark-Cg6jpdi0.svg",
+    "src": "public/front/images/dropdown-dark.svg"
+  },
+  "public/front/images/home-bg.jpg": {
+    "file": "assets/home-bg-BZQ7fQub.jpg",
+    "src": "public/front/images/home-bg.jpg"
+  },
+  "public/front/images/ticket1.png": {
+    "file": "assets/ticket1-BAWM2PKK.png",
+    "src": "public/front/images/ticket1.png"
+  },
+  "public/front/images/ticket2.png": {
+    "file": "assets/ticket2-DAyRg65H.png",
+    "src": "public/front/images/ticket2.png"
+  },
+  "public/images/dashboard/details/card-bg.png": {
+    "file": "assets/card-bg-DkyMHdLH.png",
+    "src": "public/images/dashboard/details/card-bg.png"
+  },
+  "public/images/dashboard/driver/bg-img.png": {
+    "file": "assets/bg-img-43vQKuH-.png",
+    "src": "public/images/dashboard/driver/bg-img.png"
+  },
+  "public/images/dashboard/front/chat.png": {
+    "file": "assets/chat-DAvfDt3I.png",
+    "src": "public/images/dashboard/front/chat.png"
+  },
+  "public/images/dashboard/ride/bg-img.png": {
+    "file": "assets/bg-img-BU7ZAy-b.png",
+    "src": "public/images/dashboard/ride/bg-img.png"
+  },
+  "public/images/pdf.svg": {
+    "file": "assets/pdf-BWI4AHOQ.svg",
+    "src": "public/images/pdf.svg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-DgM9J3D2.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/images/svg/danger.svg": {
+    "file": "assets/danger-B0ya1PGZ.svg",
+    "src": "resources/images/svg/danger.svg"
+  },
+  "resources/images/svg/dark-success.svg": {
+    "file": "assets/dark-success-COgosHUM.svg",
+    "src": "resources/images/svg/dark-success.svg"
+  },
+  "resources/images/svg/success.svg": {
+    "file": "assets/success-AXD-YAzh.svg",
+    "src": "resources/images/svg/success.svg"
+  },
+  "resources/images/svg/warning.svg": {
+    "file": "assets/warning-DYSbRhce.svg",
+    "src": "resources/images/svg/warning.svg"
+  },
+  "resources/images/svg/white-dropdown.svg": {
+    "file": "assets/white-dropdown-Bumr6qbQ.svg",
+    "src": "resources/images/svg/white-dropdown.svg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-NIIRCFcq.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/app.tsx": {
+    "file": "assets/app-BiUilBAU.js",
+    "name": "app",
+    "src": "resources/js/app.tsx",
+    "isEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "dynamicImports": [
+      "resources/js/pages/About.tsx",
+      "resources/js/pages/BecomeDriver.tsx",
+      "resources/js/pages/Home.tsx",
+      "resources/js/pages/HowItWorksPage.tsx",
+      "resources/js/pages/Index.tsx",
+      "resources/js/pages/NotFound.tsx",
+      "resources/js/pages/Pricing.tsx"
+    ],
+    "css": [
+      "assets/app-DgM9J3D2.css"
+    ]
+  },
+  "resources/js/assets/Mobile Screen 1.png": {
+    "file": "assets/Mobile Screen 1-DI7bmN_k.png",
+    "src": "resources/js/assets/Mobile Screen 1.png"
+  },
+  "resources/js/assets/Mobile Screen 2.png": {
+    "file": "assets/Mobile Screen 2-Cfm8xfnx.png",
+    "src": "resources/js/assets/Mobile Screen 2.png"
+  },
+  "resources/js/assets/Shape.png": {
+    "file": "assets/Shape-oRgD60fF.png",
+    "src": "resources/js/assets/Shape.png"
+  },
+  "resources/js/assets/app-store.png": {
+    "file": "assets/app-store-Dq1uJ17p.png",
+    "src": "resources/js/assets/app-store.png"
+  },
+  "resources/js/assets/business-meeting.jpg": {
+    "file": "assets/business-meeting-CcPpf83q.jpg",
+    "src": "resources/js/assets/business-meeting.jpg"
+  },
+  "resources/js/assets/google-play.png": {
+    "file": "assets/google-play-BSbUD0S0.png",
+    "src": "resources/js/assets/google-play.png"
+  },
+  "resources/js/assets/how_to_know.png": {
+    "file": "assets/how_to_know-DkIKYf2C.png",
+    "src": "resources/js/assets/how_to_know.png"
+  },
+  "resources/js/assets/star.png": {
+    "file": "assets/star-BtZGzp0f.png",
+    "src": "resources/js/assets/star.png"
+  },
+  "resources/js/pages/About.tsx": {
+    "file": "assets/About-DSapiTLd.js",
+    "name": "About",
+    "src": "resources/js/pages/About.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx",
+      "_Footer-BC-jr3SD.js",
+      "_Statistics-Lq_HTHvc.js",
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/pages/BecomeDriver.tsx": {
+    "file": "assets/BecomeDriver-D8JpgPN7.js",
+    "name": "BecomeDriver",
+    "src": "resources/js/pages/BecomeDriver.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx",
+      "_Footer-BC-jr3SD.js",
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/pages/Home.tsx": {
+    "file": "assets/Home-BzBx3enU.js",
+    "name": "Home",
+    "src": "resources/js/pages/Home.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx",
+      "_Footer-BC-jr3SD.js",
+      "_CustomerSupport-Cc2v7qeh.js",
+      "_FAQ-YVWECqSO.js",
+      "_Statistics-Lq_HTHvc.js",
+      "resources/js/app.js"
+    ],
+    "assets": [
+      "assets/how_to_know-DkIKYf2C.png",
+      "assets/star-BtZGzp0f.png"
+    ]
+  },
+  "resources/js/pages/HowItWorksPage.tsx": {
+    "file": "assets/HowItWorksPage-DcUqfMKe.js",
+    "name": "HowItWorksPage",
+    "src": "resources/js/pages/HowItWorksPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx",
+      "_Footer-BC-jr3SD.js",
+      "_FAQ-YVWECqSO.js",
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/pages/Index.tsx": {
+    "file": "assets/Index-Dj0PMtIp.js",
+    "name": "Index",
+    "src": "resources/js/pages/Index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx",
+      "_Footer-BC-jr3SD.js",
+      "_CustomerSupport-Cc2v7qeh.js",
+      "_FAQ-YVWECqSO.js",
+      "_Statistics-Lq_HTHvc.js",
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/pages/NotFound.tsx": {
+    "file": "assets/NotFound-JQa9UAch.js",
+    "name": "NotFound",
+    "src": "resources/js/pages/NotFound.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx",
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/pages/Pricing.tsx": {
+    "file": "assets/Pricing-DOpCVNbJ.js",
+    "name": "Pricing",
+    "src": "resources/js/pages/Pricing.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx",
+      "_Footer-BC-jr3SD.js",
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/script.js": {
+    "file": "assets/script-azRZGDl-.js",
+    "name": "script",
+    "src": "resources/js/script.js",
+    "isEntry": true
+  },
+  "resources/scss/admin.scss": {
+    "file": "assets/admin-CrWQmAXW.css",
+    "src": "resources/scss/admin.scss",
+    "isEntry": true
+  },
+  "resources/scss/front-style.scss": {
+    "file": "assets/front-style-DR2aNvGs.css",
+    "src": "resources/scss/front-style.scss",
+    "isEntry": true
+  }
+}
