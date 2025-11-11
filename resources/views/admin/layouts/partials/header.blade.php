@@ -38,7 +38,7 @@
                                 @php
                                     $quickLinks = get_quick_links() ?? [];
                                 @endphp
-                                @forelse($quickLinks as $link)
+                                {{-- @forelse($quickLinks as $link)
                                     <li>
                                         <a href="{{ route($link['route']) }}">
                                             <div class="svg-box">
@@ -55,7 +55,7 @@
                                                 <h6 class="mt-2">{{ __('static.quick_links_not_found') }}</h6>
                                             </div>
                                     </li>
-                                @endforelse
+                                @endforelse --}}
                             </ul>
                         </div>
                     </div>

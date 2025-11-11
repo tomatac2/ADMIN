@@ -104,8 +104,49 @@ return array(
     'all_notifications' => 'All Notifications',
     'fetch_success' => 'Fetched Successfully',
 
+    // 
+    "show"              => "Show",
+    // Zones 
+    "zone_management"       => "States Management",
+    "add_new_zone"          => "Add New State",
+    "zone_name"             => "Zone Name",
+    "zone_status"           => "Status",
+    "zone_created"          => "Created At",    
+    "zone_updated"          => "Updated At",    
+    "zone_action"           => "Actions",
+    "delete_zone"           => "Delete State",
+    "zone_confirm_delete"   => "Are You Sure Do Want Delete State",
+    "zone_active"           => "Active State (Active / inActive)",
+    "zone_save"             => "Save State",
+    "zone_inactive"         => "InActive",
+    "zone_back"             => "Back To States Management",
+    //state
+    "state_details"         => "State Details",
+    "country"               => "Country",
+    "state"                 => "State",
+    "edit_state"            => "Edit State",
+    "update_state"          => "Update State",
+    "state_cities"          => "Cities belonging to this region",
+    "state_no_city"         => "There are currently no cities belonging to this region.",
 
-    'sort_by' => 'Sort By',
+    // City
+    "city_management"       => "City Management",
+    "add_new_city"          => "Add New City",
+    "city_name"             => "City Name",
+    "city_created"          => "Created At",    
+    "city_updated"          => "Updated At",    
+    "city_action"           => "Actions",
+    "delete_city"           => "Delete City",
+    "city_confirm_delete"   => "Are You Sure Do Want Delete City",
+    "city_active"           => "Active State (Active / inActive)",
+    "city_save"             => "Save City",
+    "city_inactive"         => "InActive",
+    "city_back"             => "Back To States Management",
+    "city_details"          => "City Details",
+    "state_cities"          => "City belonging to this State",
+    "edit_city"            => "Edit City",
+
+    'sort_by'               => 'Sort By',
     'blogs' =>
         array(
             'add_blog' => 'Add Blog',

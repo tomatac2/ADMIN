@@ -40,4 +40,14 @@ class City extends Model
         $translated = __('cities.' . $value);
         return $translated === 'cities.' . $value ? $value : $translated;
     }
+
+    public function getCreatedAtAttribute($value)
+    {
+        return date("d-m-Y", strtotime($value));
+    }
+
+    public function getUpdatedAtAttribute($value)
+    {
+        return date("d-m-Y", strtotime($value));
+    }
 }

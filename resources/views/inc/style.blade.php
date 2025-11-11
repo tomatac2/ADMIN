@@ -8,8 +8,8 @@ $gradientColor2 = $settings['appearance']['sidebar_gradient_color_2'] ?? '#21212
 
 <style>
     :root {
-        --primary-color: {{ $settings['appearance']['primary_color'] }};
-        --font-family: {{ $settings['appearance']['font_family'] }};
+        --primary-color: {{ $settings['appearance']['primary_color'] ?? "#0000ff" }};
+        --font-family: {{ $settings['appearance']['font_family'] ?? "Arima" }};
         --sidebar-gradient-color-1: {{ $gradientColor1 }};
         --sidebar-gradient-color-2: {{ $gradientColor2 }};
         --sidebar-solid-color: {{ $solidColor }};

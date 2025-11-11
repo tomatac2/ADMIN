@@ -3,7 +3,6 @@
     $menuItems = MenuItems::getParentMenuById(1);
     $menuItems = $menuItems->groupBy('section');
 @endphp
-<!-- Sidebar Start-->
 <div class="page-sidebar">
     <div class="sidebar">
         <div class="sidebar-top">
@@ -30,8 +29,36 @@
                 <i class="ri-search-line"></i>
             </div>
         </div>
-
+        
+        {{-- هنا يبدأ الكود المُضاف لإدارة المناطق والمدن --}}
         <ul class="sidebar-menu custom-scrollbar overflow-auto" id="sidebar-menu">
+            
+            {{-- عنوان قسم الإدارة الأساسية --}}
+            <li class="sidebar-main-title">
+                <div>
+                    <h6>{{ __('الإدارة الأساسية') }}</h6>
+                </div>
+            </li>
+            
+            {{-- إدارة المناطق --}}
+            <li class="sidebar-menu-list">
+                <i class="ri-pushpin-2-line"></i>
+                <a class="sidebar-header" href="{{ route("admin.states.index") }}">
+                    <i class="ri-map-pin-line"></i> 
+                    <span class="sidebar-label flex-grow-1">{{ __('static.zone_management') }}</span>
+                </a>
+            </li>
+
+            {{-- إدارة المدن --}}
+            <li class="sidebar-menu-list">
+                <i class="ri-pushpin-2-line"></i>
+                <a class="sidebar-header" href="{{ route("admin.cities.index") }}">
+                    <i class="ri-building-4-line"></i> 
+                    <span class="sidebar-label flex-grow-1">{{ __('static.city_management') }}</span>
+                </a>
+            </li>
+            
+            {{-- بداية القائمة الديناميكية الأصلية --}}
             <li class="pin-title sidebar-main-title">
                 <div>
                     <h6>Pinned</h6>
@@ -124,7 +151,9 @@
 
         </ul>
 
-        <ul class="sidebar-menu" id="search-menu"></ul>
+        <ul class="sidebar-menu" id="search-menu">
+                
+        </ul>
         <div class="loader-wrapper">
             <div class="loader"></div>
         </div>
@@ -315,7 +344,7 @@
 
         setTimeout(function() {
             loader.css('display', 'none');
-            jQuery("body").removeClass("notLoaded");
+            jQuery("body").addClass("notLoaded");
         }, 300);
     }
 

@@ -34,9 +34,23 @@ class State extends Model
         return $this->belongsTo(Country::class, 'country_id');
     }
 
+    public function cities(){
+        return $this->hasMany(City::class);
+    }
+
     public function getNameAttribute($value): string
     {
         $translated = __('states.' . $value);
         return $translated === 'states.' . $value ? $value : $translated;
+    }
+
+    public function getCreatedAtAttribute($value)
+    {
+        return date("d-m-Y", strtotime($value));
+    }
+
+    public function getUpdatedAtAttribute($value)
+    {
+        return date("d-m-Y", strtotime($value));
     }
 }
